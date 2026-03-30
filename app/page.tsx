@@ -466,7 +466,7 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
               >
                 <Image
-                  src="/eliteowner.png"
+                  src="https://i.postimg.cc/XNZtg0K7/eliteowner.png"
                   alt="Elite Beauty Salon Owner"
                   fill
                   className="object-contain p-4"
@@ -495,14 +495,14 @@ export default function Home() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {[
-                "/1s.png",
-                "/2s.png",
-                "/1js.jpeg",
-                "/2js.jpeg",
-                "/5s.png",
-                "/sh.jpg",
-                "/sh2.jpg",
-                "/hcolor.jpg"
+                "https://i.postimg.cc/dVxTHQtZ/1s.png",
+                "https://i.postimg.cc/sgNZ6fDZ/2s.png",
+                "https://i.postimg.cc/0yBJW520/5s.png",
+                "https://i.postimg.cc/CxQfPMLN/6s.png",
+                "https://i.postimg.cc/x14bxjTH/4s.png",
+                "https://images.freeimages.com/variants/AfQyGvrFY1w3neAN4mavsZoj/624f0dc1dff9bdccab032f93c33e79de78481770e79e21d3b0469daf51f02797",
+                "https://static.vecteezy.com/system/resources/thumbnails/038/949/095/small/ai-generated-beautiful-hairstyle-of-young-woman-after-dying-hair-and-making-highlights-in-hair-salon-photo.jpg",
+                "https://static.vecteezy.com/system/resources/thumbnails/066/241/911/small/stylish-woman-receiving-hair-treatment-in-salon-photo.jpeg"
               ].map((src, index) => (
                 <motion.div
                   key={index}
@@ -518,6 +518,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     referrerPolicy="no-referrer"
+                    unoptimized={src.includes('vecteezy.com')}
                   />
                   <div className="absolute inset-0 bg-neutral-950/20 group-hover:bg-transparent transition-colors duration-500" />
                 </motion.div>
